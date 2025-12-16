@@ -7,7 +7,7 @@ module mem (
 
     // initialize memory with instructions or data
     initial
-        $readmemh("riscv.hex", RAM);
+        $readmemh("heapsort.hex", RAM);
 
     assign rd = RAM[a[31:2]]; // word aligned
 
